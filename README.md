@@ -13,6 +13,6 @@ This repository is a collection of **step-by-step programs and notebooks** for l
 - Vietnamese tokenization
 - Smart lowercase handling with POS tagging
 - _and more (will update after)_
-- [Notebook →](01_text_preprocessing/Vietnam_Online_News_Text_Processing.ipynb)
+👉 [Notebook](01_text_preprocessing/Vietnam_Online_News_Text_Processing.ipynb)
 
 ### 2. [Updating...]
