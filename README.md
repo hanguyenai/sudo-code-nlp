@@ -17,4 +17,6 @@ It is being developed during my participation in the **Sudo Code Program**. This
 - _and more (will update after)_
   👉 [Notebook](01_text_preprocessing/Vietnam_Online_News_Text_Processing.ipynb)
 
-### 2. [Updating...]
+### 2. Text Representation
+
+### 3. [Updating...]
