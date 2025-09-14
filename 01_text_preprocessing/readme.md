@@ -5,10 +5,6 @@ It is part of the **Sudo Code Program NLP** repository.
 
 ## 📂 Contents
 
-- **Unicode & Diacritic Normalization**  
-  Ensure consistent text representation by normalizing Unicode forms (NFC/NFKC).  
-  Example: `"Hoà"` and `"Hoà"` → `"Hoà"`.
-
 - **Removing Noise (HTML tags, URLs, emails, numbers, emojis)**  
   Clean the text by removing unnecessary elements such as:  
   - HTML tags (`<div>`, `<p>`, …)  
@@ -27,43 +23,24 @@ It is part of the **Sudo Code Program NLP** repository.
   Convert text to lowercase while keeping **proper nouns (PROPN)** intact.  
   - Example: `"Việt Nam"` should remain `"Việt_Nam"`,  
     while `"Trường học rất đẹp"` → `"trường_học rất đẹp"`.
-
+    
+- **Vietnamese Diacritic Normalization**
+  Fix misplaced Vietnamese tone marks and common typing variants after tokenization/cleaning.
+  Example: `"hoà bình"` → `"hòa bình"`.
 ---
 
-### 🆕 More Preprocessing Methods (to be added)
+### 🆕 Basic Additional Preprocessing Methods
 
 - **Stopword Removal**  
-  Eliminate common words (*“là”*, *“và”*, *“của”*) that do not add semantic value.  
+  Remove frequent but less informative words (*“là”*, *“của”*, *và”* …).
 
-- **Stemming & Lemmatization**  
-  Reduce words to their root form.  
-  - *học*, *học tập*, *học sinh* → *học*  
+- **Stemming / Lemmatization**  
+  Reduce words to their base or root form to avoid duplicates.  
+  Example: *học*, *học tập*, *học sinh* → *học*.
 
-- **Handling Abbreviations & Acronyms**  
-  Expand or standardize abbreviations.  
-  - *TP.HCM* → *Thành_phố_Hồ_Chí_Minh*  
-  - *UN* → *United_Nations*  
-
-- **Synonym Normalization**  
-  Map different words with the same meaning to one form.  
-  - *xe hơi* = *ô tô*  
-
-- **Spelling Correction**  
-  Fix common typos or OCR errors.  
-  - *ngôn ngữ anh* → *ngôn_ngữ_anh*  
-
-- **Handling Negations**  
-  Mark or transform negative phrases to preserve meaning.  
-  - *không vui* → *không_vui*  
-
-- **Part-of-Speech Filtering**  
-  Keep only relevant word types (e.g., nouns, verbs, adjectives).  
-
-- **Lemmatization with Dictionaries**  
-  Use Vietnamese lexicons to convert inflected forms to their canonical form.  
-
-- **Handling Rare Words / Class Balancing**  
-  Replace low-frequency terms with `<UNK>` or group rare labels into `"other"`.  
+- **Handling Abbreviations**  
+  Normalize or expand common short forms.  
+  Example: *TP.HCM* → *thành_phố_hồ_chí_minh*.
 
 ## 📒 Notebook
 
