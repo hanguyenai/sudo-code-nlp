@@ -1,0 +1,43 @@
+# ==============================
+# 🔹 General
+# ==============================
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.env
+.venv
+.vscode/
+.idea/
+
+# ==============================
+# 🔹 Dataset & Temp Files
+# ==============================
+dataset_split/
+dataset_preprocessed/
+viwik18/
+*.txt
+*.csv
+*.zip
+*.json
+*.log
+
+# ==============================
+# 🔹 Model Files
+# ==============================
+word2vec_model/
+*.model
+*.npy
+*.bin
+*.h5
+*.pt
+*.pth
+
+# ==============================
+# 🔹 Output & Cache
+# ==============================
+runs/
+output/
+results/
+cache/
+checkpoints/
