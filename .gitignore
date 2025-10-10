@@ -16,6 +16,7 @@ __pycache__/
 03_word2vec/dataset_split/
 03_word2vec/dataset_preprocessed/
 03_word2vec\viwik18
+04_lstm_generation\10000-vietnamese-books
 *.txt
 *.csv
 *.zip
